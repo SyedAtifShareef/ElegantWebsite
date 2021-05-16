@@ -1,0 +1,22 @@
+*{
+    /* the properites specified using * are universal and are applied to all the properies unless specified */
+    margin: 0;
+    padding: 0;
+    /* default margin and padding is specied zero */
+}
+.header{
+    /* styling the header part of our website adding background image and positioning */
+    /* viewport units vh,vw are used to make it responsive */
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgb(4,9,30,0.7)),url(header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
