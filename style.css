@@ -2,7 +2,8 @@
     /* the properites specified using * are universal and are applied to all the properies unless specified */
     margin: 0;
     padding: 0;
-    /* default margin and padding is specied zero */
+    font-family: 'Poppins', sans-serif;
+    /* added font and default margin and padding is specied zero */
 }
 .header{
     /* styling the header part of our website adding background image and positioning */
@@ -16,7 +17,44 @@
 }
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 2% 5%;
     justify-content: space-between;
     align-items: center;
+}
+nav img {
+    width: 150px; 
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;  
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px 16px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 0.7s;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(238, 96, 30);
+    display: block;
+    margin: auto;
+    transition-duration: 0.7s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
 }
