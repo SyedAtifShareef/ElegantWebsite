@@ -45,6 +45,7 @@ nav img {
     text-decoration: none;
     font-size: 20px;
     transition-duration: 0.7s;
+    font-weight: bold;
 }
 .nav-links ul li::after{
     content: '';
@@ -57,4 +58,183 @@ nav img {
 }
 .nav-links ul li:hover::after{
     width: 100%;
+}
+.text-box{
+    position: absolute;
+    color: white;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.text-box h1{
+    font-size: 62px;
+
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 14px 34px;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+    background:transparent;
+}
+.hero-btn:hover{
+    border: 2px solid rgb(238, 96, 30);
+    background-color: rgb(238, 96, 30) ;
+    transition: 0.5s; 
+} 
+
+nav .fa{
+    display: none;
+
+}
+/* making the above things responsive */
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 23px;
+    }
+    .text-box p{
+        font-size: 4px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background:  rgb(238, 96, 30);
+        height: 100vh;
+        width: 200px;
+        top: 0px;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition:0.7s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .nav-links{
+        display: none;
+    }
+    
+}
+
+/* Designing the section Courses Offered */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px ;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;     
+}
+
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.course-column{
+    flex-basis: 31%;
+    background:#fff3f3 ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.course-column:hover{
+box-shadow: 0px 0px 20px 0px rgba(252, 5, 5, 0.6);
+}
+/* making the entire courses section responsive
+ */
+ @media(max-width:700px) {
+.row{
+    flex-wrap: wrap;
+    justify-content: center;
+}     
+ }
+
+ /* campus section styling */
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:50px ;
+}
+.campus-column{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition:0.5s ;
+    
+    
+}
+.campus-column img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(230, 19, 19, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
 }

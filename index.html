@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>University of Engineering </title>
 </head>
 <body>
@@ -15,17 +16,92 @@
     <a href="index.html">
         <img src="logo.png" alt="Logo">
     </a>
-    <div class="nav-links">
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
             <li><a href="">COURSES OFFERED</a></li>            
             <li><a href="">BLOG</a></li>            
             <li><a href="">CONTACT</a></li>            
-
-        </ul>
+        </ul>  
     </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
 </nav>
+<div class="text-box">
+    <h1>Best Engineering University</h1>
+    <p>The University of Engineering is the best University for Engineering and Technology.
+         As declared by <br>the Times Magazine and QS World University Ranking.</p>
+    <a href="" class='hero-btn'>Click Here to Know More </a>
+</div>
     </section>
+<!-- COURSES offered -->
+<section class="course">
+    <h1>Courses Offered </h1>
+    <p>At the University of Engineering we offer world class industry ready programs in various disciples. We offer undergraduate,masters as well as doctorate research based in programs</p>
+    <div class="row">
+    <div class="course-column">
+        <h3>UnderGraduate</h3>
+        <p>We offer undergraduate programs in Electronics,Mechanical and Computer Sciences Engineering</p>
+    </div>
+    <div class="course-column">
+        <h3>Masters</h3>
+        <p>We offer Masters programs in Electronics,Mechanical and Computer Sciences Engineering</p>
+    </div>
+    <div class="course-column">
+        <h3>Doctorate(Ph.D)</h3>
+        <p>We offer PhD research programs in Electronics,Mechanical and Computer Sciences Engineering</p>
+    </div>
+</div>
+</section>
+<section class="campus">
+    <h1>UoE Campus</h1>
+    <p>University of Engineering is spread across 12000 Acres. it is surrounded by lush green rainforests on 3 sides and by great Swan lake on the other. the Campus is well equipped with all research Lab facilties infact the best advanced laboratories are founded here.
+    </p>
+    <div class="row">
+        <div class="campus-column">
+            <img src="campus.jpg">
+            <div class="layer">
+                <h3>Entrance</h3>
+            </div>
+        </div>
+        <div class="campus-column">
+            <img src="campus3.png">
+            <div class="layer">
+                <h3>Sports Area</h3>
+            </div>
+        </div>
+        <div class="campus-column">
+            <img src="campus2.jpg" >
+            <div class="layer">
+                <h3>Great Hall</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- -----JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        document.querySelector('.nav-links').style.display = 'block';
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+        setTimeout(()=>{
+        	document.querySelector('.nav-links').style.display = 'none';
+
+        },1000)
+    }    
+</script>
+
+
+
 </body>
 </html>
