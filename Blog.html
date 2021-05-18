@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>UoE Blog</title>
+</head>
+<body>
+    <section class="about-header">
+<nav>
+    <a href="index.html">
+        <img src="logo.png" alt="Logo">
+    </a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Courses.html">COURSES OFFERED</a></li>            
+            <li><a href="Blog.html">BLOG</a></li>            
+            <li><a href="contact.html">CONTACT</a></li>            
+        </ul>  
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<h1>Distance Learning Programs</h1>
+    </section>
+
+<!-- content of blog page -->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="dlp.png" alt="">
+            <h2>There are over 50 DLP programs offered by UoE</h2>
+            <p>UoE has limited intake for on campus programs.we enourage all the students to study at UoE through distance learning. we offer the same class cirriculum for distance learning students.</p>
+            <br>
+            <p>The program fees is very affortdable for everyone who wishes to pursue education with UoE through distance laerning mode the degree will be awarded at the annunal ceremony conducted at the year end on UoE Campus. Dont worry distance learning students will be provided thier graduation or diploma certificate through post.</p>
+            <br>
+            <p>Detailed Course structure is made available to the students on enrollment. students are free to check the program contents before enrolling to get an idea what the course has to offer. all the courses are taught by experineced faculty who are well known all round the world for thier research contributions to various domains</p>
+            <br>
+            <p>Some the programs offered by the university of Engineering are data science,machine learning,artificial intelligence,microelectronics,nanotech,internet of things and diploma in mechanical engineering.</p>
+
+
+
+            <!-- designing comment box -->
+            <div class="comment-box">
+                <h3>Comment here</h3>
+                <form action="" class="comment-form">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="email" placeholder="Enter Your Email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Post Comment Now</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="blog-right">
+
+            <h3>Previous Posts</h3>
+            <div>
+                <span>Data Science</span>
+                <span>12</span>
+            </div>
+            <div>
+                <span>Floor Planning CTA</span>
+                <span>18</span>
+            </div>
+            <div>
+                <span>Web Development</span>
+                <span>35</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>05</span>
+            </div>
+            <div>
+                <span>Artificial Intelligence</span>
+                <span>24</span>
+            </div>
+            <div>
+                <span>Micro-Electronics</span>
+                <span>14</span>
+            </div>
+            <div>
+                <span>Internet of Things</span>
+                <span>04</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    
+
+    
+<!-- footer section  -->
+<section class="footer">
+    <h4>About UoE</h4>
+    <p>University of Engineering is a Public Grant University. it is a University to <br>be Established in near future by H.e.H Syed Atif Shareef.</p>
+    <div class="socialicons">
+        <i class="fa fa-google"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>        
+        <i class="fa fa-instagram"></i>        
+                
+    </div>
+
+    <!-- conclusion line -->
+    <p>Designed by<i class="fa fa-empire"></i>Atif<i class="fa fa-empire"></i></p>
+</section>
+
+<!-- -----JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        document.querySelector('.nav-links').style.display = 'block';
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+        setTimeout(()=>{
+        	document.querySelector('.nav-links').style.display = 'none';
+        },1000)
+    }    
+</script>
+
+
+
+</body>
+</html>
