@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Courses Offered </title>
+</head>
+<body>
+    <section class="about-header">
+<nav>
+    <a href="index.html">
+        <img src="logo.png" alt="Logo">
+    </a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSES OFFERED</a></li>            
+            <li><a href="">BLOG</a></li>            
+            <li><a href="">CONTACT</a></li>            
+        </ul>  
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<h1>Our Courses</h1>
+    </section>
+
+    <!-- courses page -->
+    <section class="course">
+        <h1>Courses Offered </h1>
+        <p>At the University of Engineering we offer world class industry ready programs in various disciples. We offer undergraduate,masters as well as doctorate research based in programs</p>
+        <div class="row">
+        <div class="course-column">
+            <h3>UnderGraduate</h3>
+            <p>We offer undergraduate programs in Electronics,Mechanical and Computer Sciences Engineering</p>
+        </div>
+        <div class="course-column">
+            <h3>Masters</h3>
+            <p>We offer Masters programs in Electronics,Mechanical and Computer Sciences Engineering</p>
+        </div>
+        <div class="course-column">
+            <h3>Doctorate(Ph.D)</h3>
+            <p>We offer PhD research programs in Electronics,Mechanical and Computer Sciences Engineering</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="facilities">
+        <h1>Facilties Provided</h1>
+        <p>the University of Engineering offers world class facilties in every domain. we provide our students with the best in class accomodation,sports facilities and exceptional research labs with nobel prize nominated faculty</p>
+        <div class="row">
+            <div class="facilties-coloumn">
+                <img src="facilties1.jpg">
+                    <h3>Research Labs</h3>
+                    <p>The University is equipped with latest Super speed Computer, NanoTech and Micro-Electronics labs</p>
+            </div>
+            <div class="facilties-coloumn">
+                <img src="facilities2.jpg">
+                    <h3>Active Sports</h3>
+                    <p>We encourage our students to play sports..the university has several world class stadiums and has produced over 50 olympic medal winners</p>
+            </div>
+            <div class="facilties-coloumn">
+                <img src="facilities3.jpg">
+                    <h3>Experienced Faculty</h3>
+                    <p>We are proud to say that we have the some of the best professors from all over the world. at UoE we have nobel prize nominees,rhodes scholars and nobel prize winners. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="facilties-coloumn">
+                <img src="scholarships.jpg">
+                    <h3>Scholarships</h3>
+                    <p>The University offers merit scholarships for students with exceptional research record. There is also scholarship for students with weak economic background.</p>
+            </div>
+            <div class="facilties-coloumn">
+                <img src="accomadation.jpg">
+                    <h3>Accomodation</h3>
+                    <p>Students at UoE are offered free Accomodation in world class residential buildings located inside the campus.</p>
+            </div>
+            <div class="facilties-coloumn">
+                <img src="interjob.jpg">
+                    <h3>Internship and Jobs</h3>
+                    <p>there are plenty of internship opportunites being offered by major tech giants and startups along with various pre placement offers. </p>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+    
+<!-- footer section  -->
+<section class="footer">
+    <h4>About UoE</h4>
+    <p>University of Engineering is a Public Grant University. it is a University to <br>be Established in near future by H.e.H Syed Atif Shareef.</p>
+    <div class="socialicons">
+        <i class="fa fa-google"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>        
+        <i class="fa fa-instagram"></i>        
+                
+    </div>
+
+    <!-- conclusion line -->
+    <p>Designed by<i class="fa fa-empire"></i>Atif<i class="fa fa-empire"></i></p>
+</section>
+
+<!-- -----JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        document.querySelector('.nav-links').style.display = 'block';
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+        setTimeout(()=>{
+        	document.querySelector('.nav-links').style.display = 'none';
+        },1000)
+    }    
+</script>
+
+
+
+</body>
+</html>
