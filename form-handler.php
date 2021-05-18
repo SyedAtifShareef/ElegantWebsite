@@ -4,7 +4,7 @@ $visitor_email= $_POST['email'];
 $subject= $_POST['subject'];
 $message= $_POST['message'];
 
-$email_from="info@university-of-engineering.netlify.app";
+$email_from="university-of-engineering.netlify.app";
 
 
 $email_subject="Query from Website";
