@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <section class="about-header">
+<nav>
+    <a href="index.html">
+        <img src="logo.png" alt="Logo">
+    </a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Courses.html">COURSES OFFERED</a></li>            
+            <li><a href="Blog.html">BLOG</a></li>            
+            <li><a href="contact.html">CONTACT</a></li>            
+        </ul>  
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<h1>Contact UoE Admission Center</h1>
+    </section>
+
+<!-- contact uae section -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.193814627203!2d78.50575306547786!3d17.34953103545619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb986e54890e85%3A0x614204b1b4e3de40!2s12%2F234-5%2C%20New%20Santoshnagar%2C%20Santosh%20Nagar%2C%20Hyderabad%2C%20Telangana%20500059!5e0!3m2!1sen!2sin!4v1621340260043!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<!-- contact form  -->
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-column">
+            <div>
+                <i class="fa fa-home"></i>
+                <span><h5>
+                    ABZ Road, UoE Campus
+                </h5>
+                <p>Los Santos,Monta Clara,C.A,USA</p>
+            </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span><h5>
+                    +101 6565678776
+                </h5>
+                <p>Open All Days 9:00AM to 7:00PM except National Holidays</p>
+            </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span><h5>
+                    atif@info.com
+                </h5>
+                <p>Email us for any queries</p>
+            </span>
+            </div>
+        </div>
+             <div class="contact-column">
+                 <form action="">
+                     <input type="text" placeholder="Enter Yor Name" required>
+                     <input type="email" placeholder="Enter Your Email" required>
+                     <input type="text" placeholder="Enter Yor Subject" required>
+                     <textarea rows="8" placeholder="Message" required></textarea>
+                     <button type=submit class="hero-btn red-btn">Send Message</button>
+                     
+
+                 </form>
+             </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+    
+<!-- footer section  -->
+<section class="footer">
+    <h4>About UoE</h4>
+    <p>University of Engineering is a Public Grant University. it is a University to <br>be Established in near future by H.e.H Syed Atif Shareef.</p>
+    <div class="socialicons">
+        <i class="fa fa-google"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>        
+        <i class="fa fa-instagram"></i>        
+                
+    </div>
+
+    <!-- conclusion line -->
+    <p>Designed by<i class="fa fa-empire"></i>Atif<i class="fa fa-empire"></i></p>
+</section>
+
+<!-- -----JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        document.querySelector('.nav-links').style.display = 'block';
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+        setTimeout(()=>{
+        	document.querySelector('.nav-links').style.display = 'none';
+        },1000)
+    }    
+</script>
+
+
+
+</body>
+</html>
